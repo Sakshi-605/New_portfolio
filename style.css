@@ -1,0 +1,236 @@
+:root {
+    --primary: #6c63ff;
+    --secondary: #00d4ff;
+    --dark: #0f172a;
+    --glass: rgba(255, 255, 255, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #0f172a, #1e293b);
+    color: #e5e7eb;
+}
+
+/* NAVBAR */
+header {
+    background: #020617;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, var(--primary), var(--dark));
+}
+
+.hero-glass {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 520px;
+    box-shadow: 0 0 40px rgba(108, 99, 255, 0.4);
+}
+
+.hero span {
+    color: var(--secondary);
+}
+
+/* PROFILE PIC */
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--secondary);
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #000;
+}
+
+.btn.secondary {
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--secondary);
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+/* GLASS CARD */
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.15);
+    transition: 0.3s;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+}
+
+/* GRID */
+.grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.glass-card i {
+    font-size: 35px;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+.links a {
+    margin: 10px;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ABOUT SECTION */
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+}
+
+.about-box {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.about-box.highlight {
+    border-left: 4px solid var(--secondary);
+}
+
+/* CERTIFICATE IMAGES */
+.certificate-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+}
+
+.certificate-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.6);
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 15px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #020617;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        width: 200px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+.coming-soon {
+    display: inline-block;
+    background: var(--secondary);
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 5px;
+}

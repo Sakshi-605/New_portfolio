@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakshi | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <h2 class="logo">Sakshi<span>.</span></h2>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-glass">
+
+            <!-- PROFILE IMAGE -->
+            <div class="profile-pic">
+                <img src="profile.jpg" alt="Sakshi">
+            </div>
+
+            <h1>Hi, I'm <span>Sakshi</span></h1>
+            <h3>Frontend Developer</h3>
+            <p>
+                I build modern, responsive and user-friendly web interfaces
+                using HTML, CSS and JavaScript.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="resume.pdf" class="btn primary" download>
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+                <a href="https://www.linkedin.com/in/sakshi-jha-859382285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn secondary" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+
+        <div class="about-container">
+            <div class="glass-card about-box">
+                <p>
+                    I am a Computer Science Engineering student and an aspiring Frontend
+                    Developer who enjoys building clean, modern and responsive web
+                    interfaces.
+                </p>
+            </div>
+
+            <div class="glass-card about-box">
+                <p>
+                    As a fresher, I have focused on strengthening my fundamentals in
+                    HTML, CSS and JavaScript through hands-on practice and small projects.
+                    I also have basic knowledge of Data Structures and Algorithms, which
+                    helps me think logically and write structured code.
+                </p>
+            </div>
+
+            <div class="glass-card about-box highlight">
+                <p>
+                    I have completed certified training in Web Development and DSA, and I
+                    am actively looking for internship or entry-level opportunities where
+                    I can apply my skills, gain real-world experience, and grow as a
+                    professional developer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="glass-card"><i class="fa-brands fa-html5"></i>
+                <h4>HTML5</h4>
+            </div>
+            <div class="glass-card"><i class="fa-brands fa-css3-alt"></i>
+                <h4>CSS3</h4>
+            </div>
+            <div class="glass-card"><i class="fa-brands fa-js"></i>
+                <h4>JavaScript</h4>
+            </div>
+            <div class="glass-card"><i class="fa-solid fa-mobile-screen"></i>
+                <h4>Responsive Design</h4>
+            </div>
+            <div class="glass-card"><i class="fa-brands fa-github"></i>
+                <h4>Git & GitHub</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+        <h2>Achievements & Learning Proof</h2>
+        <div class="grid">
+            <!-- DSA Certificate -->
+            <div class="glass-card">
+                <h4>DSA Certification</h4>
+                <p>Certified in Data Structures & Algorithms by my college.</p>
+                <a href="DSA_Certificate.jpg" target="_blank">
+                    <img src="DSA_Certificate.jpg" alt="DSA Certificate" class="certificate-img">
+                </a>
+            </div>
+
+            <!-- Web Development Certificate -->
+            <div class="glass-card">
+                <h4>Web Development Training</h4>
+                <p>Completed Web Development training from RCPL.</p>
+                <a href="Web_Dev_Certificate.jpg" target="_blank">
+                    <img src="Web_Dev_Certificate.jpg" alt="Web Development Certificate" class="certificate-img">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="glass-card">
+                <h4>Personal Portfolio</h4>
+                <p>Responsive portfolio using HTML, CSS & JavaScript.</p>
+            <div class="links">
+                <span class="coming-soon">Live Coming Soon</span>
+                <span class="coming-soon">Code Coming Soon</span>
+            </div>
+
+            </div>
+            <div class="glass-card">
+                <h4>Landing Page</h4>
+                <p>Modern landing page with clean UI.</p>
+            <div class="links">
+                <span class="coming-soon">Live Coming Soon</span>
+                <span class="coming-soon">Code Coming Soon</span>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="glass-card">
+            <p>Email: sakshijha847223@gmail.com</p>
+            <p>LinkedIn: linkedin.com/in/sakshi_Jha</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Sakshi | Frontend Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
